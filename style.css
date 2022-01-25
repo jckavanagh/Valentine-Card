@@ -3,7 +3,7 @@ body {
 }
 
 .heart {
-  background-color: whitesmoke;
+  background-color: pink;
   width: 150px;
   height: 150px;
   margin: auto;
@@ -20,7 +20,7 @@ body {
 
 .heart::after {
   content: "";
-  background-color: whitesmoke;
+  background-color: pink;
   width: 150px;
   height: 150px;
   top: 0;
@@ -31,7 +31,7 @@ body {
 
 .heart::before {
   content: "";
-  background-color: whitesmoke;
+  background-color: pink;
   width: 150px;
   height: 150px;
   top: -75px;
@@ -72,7 +72,8 @@ body {
   height: 300px;
   width: 300px;
   position: absolute;
-  background-color: rgb(199, 99, 194);
+  background-color: whitesmoke;
+  opacity: 60%;
   border-radius: 50%;
 }
 
@@ -81,7 +82,8 @@ body {
   height: 300px;
   width: 300px;
   position: absolute;
-  background-color: #c5c4bb;
+  background-color: purple;
+  opacity: 40%;
   transform: rotate(45deg);
   z-index: -2;
 }
