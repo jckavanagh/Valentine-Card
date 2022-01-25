@@ -1,0 +1,50 @@
+body {
+  background-color: pink;
+}
+
+.heart {
+  background-color: whitesmoke;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+  animation: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.heart::after {
+  content: "";
+  background-color: whitesmoke;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 75px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  content: "";
+  background-color: whitesmoke;
+  width: 150px;
+  height: 150px;
+  top: -75px;
+  right: 0px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.5) rotate(-45deg);
+  }
+}
